@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useRef, Fragment } from 'react'
+import { useState, useRef, Fragment, FormEvent } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { useModalStore } from '@/store/Modal1Store';
+import { useModalStore } from '@/store/ModalStore';
 import { useBoardStore } from '@/store/BoardStore';
 import TaskTypeRadioGroup from './TaskTypeRadioGroup';
 import Image from 'next/image';

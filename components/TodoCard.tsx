@@ -29,7 +29,7 @@ function TodoCard({
     useEffect(() => {
         if (todo.image) {
             const fetchImage = async () => {
-                const url = await getUrl(todo.image!);
+                const url = await getUrl(todo?.image!);
                 if (url) {
                     setImageUrl(url.toString());
                 }

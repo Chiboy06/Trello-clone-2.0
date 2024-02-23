@@ -14,10 +14,15 @@ interface Todo {
     $createdAt: string,
     title: string,
     status: TypedColumn,
-    image?: string,
+    image?: Image
 }
 
+// type Image = {
+//     image?: string | null | undefined
+// }
+
 interface Image {
+    image?: string | null | undefined
     bucketId: string;
     fileId: string;
 }

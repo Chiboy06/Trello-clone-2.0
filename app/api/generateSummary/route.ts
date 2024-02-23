@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     console.log(todos);
 
     // communicate with openAI GPT
-    const response = await openai.createChatCompletion({
+    const response = await openai.chat.completions.create({
         model: "gpt-3.5-turbo", //change to 'gpt-4' if you have access to it
         // model: "gpt-4",
         temperature: 0.8,
@@ -27,7 +27,7 @@ export async function POST(request: Request) {
         ]
     });
 
-    const { data } = response;
+    const data  = response;
 
     // console.log("Data Is: ", data);
     // console.log(data.choices[0].message);
