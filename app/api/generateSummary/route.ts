@@ -61,7 +61,7 @@ export async function POST(request: Request) {
 
     const data  = text;
 
-    console.log("Data Is: ", data);
+    // console.log("Data Is: ", data);
     // console.log(data.choices[0].message);
 
     return NextResponse.json(data);
