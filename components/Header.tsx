@@ -73,7 +73,7 @@ function Header() {
                 }`} />
 
                 {suggestion && !loading ? suggestion
-                : "GPT is summarising your tasks for the day...."}
+                : "Gemini is summarising your tasks for the day...."}
             </p>
         </div>
         
